@@ -1,0 +1,50 @@
+pick 553e6ed A
+pick b1b65c6 F
+pick 589375f D-oups
+pick e6ba690 B et C
+pick 48f0c2a H1
+pick 768135a H2
+pick b2d8190 E
+pick 5df1945 G
+
+
+==>
+
+pick 553e6ed A
+pick e6ba690 B et C
+pick 589375f D-oups
+pick b2d8190 E
+pick b1b65c6 F
+pick 5df1945 G
+pick 48f0c2a H1
+pick 768135a H2
+
+==>
+
+pick 553e6ed A
+e e6ba690 B et C
+r 589375f D-oups
+pick b2d8190 E
+pick b1b65c6 F
+pick 5df1945 G
+pick 48f0c2a H1
+s 768135a H2
+
+
+# Sauvegarder
+
+git lg
+git reset HEAD~
+
+git add B
+git cm B
+
+git add C
+git cm C
+
+git rebase --continue
+
+
+# Renommer D-oups en D et sauvegarder
+
+# Conserver uniquement le message H comme message de commit au lieu de H1 suivi de H2
